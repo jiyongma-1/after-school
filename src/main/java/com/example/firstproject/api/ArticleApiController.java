@@ -9,7 +9,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.net.http.HttpResponse;
 import java.util.List;
 
 @Slf4j
@@ -23,7 +22,7 @@ public class ArticleApiController {
 
     @GetMapping("/api/articles")
     public List<Article> show(){
-        return articleService.findAll();
+        return articleService.index();
     }
     @GetMapping("/api/articles/{id}")
     public Article index(@PathVariable Long id){

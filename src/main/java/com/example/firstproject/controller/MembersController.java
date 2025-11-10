@@ -19,7 +19,7 @@ import java.util.List;
 @Slf4j
 @Controller
 public class MembersController {
-
+//TEST
     @Autowired
     private MemberRepository memberRepository;
 
